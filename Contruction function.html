@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function Studant(name,age,roll){
+            this.name = name,
+            this.age = age
+            this.roll = roll
+        }
+
+        const MYstudant = new Studant("samir",25,"F-E")
+        const MY2studant = new Studant("MAHES",45,"B-E")
+
+        console.log(MYstudant);
+        console.log(MY2studant);
+    </script>
+<script>
+    // construction Function 
+
+    // function Studant (name,age,rollno){
+    //     this.name=name,
+    //     this.age=age
+    //     this.rollno=rollno
+    // }
+    //   const Mystudant = new Studant("sameer",25,125)
+    //   const My2studant = new Studant("ameer",35,1395)
+    //   console.log(My2studant);
+    //   console.log(Mystudant);
+
+    //class and object 
+
+//     class Addmisionform{
+//         submit(){
+//             alert(this.name    +    "  Your form was Submited")
+//         }
+//         cancel(){
+//             alert(this.name    +     "  Your form was cancel")
+//         }
+//         fill(givename){
+//             this.name=givename
+//         }
+//     }
+// let mahesh = new Addmisionform()
+// mahesh.fill("mahesh")
+// mahesh.submit()
+// console.log(mahesh);
+
+// let Ramesh = new Addmisionform()
+// Ramesh.fill("Ramesh")
+// Ramesh.cancel()
+
+// class constroctor
+
+// class Product {
+//     constructor(Productname,Productprice,Productdiscount)
+//     {
+//         this.Productname=Productname
+//         this.Productprice=Productprice
+//         this.Productdiscount=Productdiscount
+//     }
+// }
+// let car = new Product("Swift-VXI","7 Lakh","10%")
+// let Bike = new Product("Revolt","1.35 lakh","20%")
+// console.log(car);
+// console.log(Bike);
+
+class Studant{
+    submit(){
+        alert( this.name + "hello submit")
+    }
+    cancel(){
+        alert("hello cancel")
+    }
+    fill(givename){
+        this.name=givename
+    }
+}
+
+let mahesh = new Studant()
+mahesh.fill("Mahesh")
+mahesh.submit()
+mahesh.cancel()
+
+</script>
+
+</body>
+</html>
